@@ -5,9 +5,14 @@ import Badge from '../components/Badge.astro';
 import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
 import GitHubIcon from '../components/icons/GitHubIcon.astro'
 import SocialPill from '../components/SocialPill.astro'
+import MailIcon from '../components/icons/MailIcon.astro'
+import Experience from '../components/Experience.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout 
+title="Portfolio de Anceldev - Desarrollador web y móvil"
+description='Contrata a anceldev para crear tu aplicación web o móvil.'
+>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">Hey, soy Anceldev 
@@ -21,16 +26,24 @@ import SocialPill from '../components/SocialPill.astro'
 				<span class="text-yellow-200/90">Desarrollador móvil junior</span>.
 				<span class="text-red-200/90"> De Valladolid, España 🇪🇸</span>. 
 				<span class="opacity-85">Entusiasta del desarrollo del aplicaciones</span>.</h2>
-			<nav class="flex gap-x-2 mt-8">
+			<nav class="flex gap-x-4 mt-8">
 				<SocialPill href="https://www.linkedin.com/in/ancel-guarayo-9b5b95267/">
-					<LinkedInIcon class="w-6 h-6"/>
+					<LinkedInIcon class="size-6"/>
 					LinkedIn
 				</SocialPill>
 				<SocialPill href="https://github.com/anceldev">
-					<GitHubIcon class="w-6 h-6"/>
+					<GitHubIcon class="size-6"/>
 					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:aguarayo@gmail.com">
+					<MailIcon class="size-6"/>
+					aguarayo@gmail.com
 				</SocialPill>
 			</nav>
 		</section>
+		<section>
+			<Experience />
+		</section>
+
 	</main>
 </Layout>
