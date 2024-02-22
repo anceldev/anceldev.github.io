@@ -1,13 +1,24 @@
+---
+import { Image } from "astro:assets";
+import myImage from '../../public/assets/profile.jpeg'
+---
+
 <header class="flex justify-between mx-auto items-center py-5 w-[1120px]">
-    <img 
+    <!-- <img 
     class="rounded-full size-12"
-    src="../../public/assets/photo.jpeg" 
-    alt="anceldev photo" 
-    />
+    src="../../public/assets/profile.jpeg" 
+    alt="anceldev"
+ 
+    /> -->
+    <Image 
+    class="rounded-full size-12"
+    src={myImage} 
+    alt="anceldev" />
     <nav class="flex flex-row gap-x-10 opacity-90">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>

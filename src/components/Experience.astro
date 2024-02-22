@@ -1,34 +1,31 @@
 ---
-import { Code, Debug } from "astro:components"
-import ExperienceItem from "./ExperienceItem.astro"
+import { Code, Debug } from "astro:components";
+import ExperienceItem from "./ExperienceItem.astro";
 
-const EXPERIENCE = [
-    {
-        date: 'Februeary 20220',
-        title: 'Application UI code in Tailwind CSS',
-        description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-comerce & marketing pages.',
-    },
-    {
-        date: 'Februeary 20224',
-        title: 'Prácticas en MBS Digital',
-        description: 'Realización de prácticas en empresa realizando tareas de backend en una aplicación web.',
-    },
-    {
-        date: 'April 2022',
-        title: 'E-Commerce UI code in Tailwind CSS',
-        description: 'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
-    }
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Creador de Contenido",
+    company: "Twitch",
+    description:
+      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Principal Frontend Engineer",
+    company: "Adevinta Spain",
+    description:
+      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  },
 ]
 ---
-
-
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 ml-4">
     {
-        EXPERIENCE.map(experience => {
+        EXPERIENCIE.map((experience) => (
             <li class="mb-10 ms-4">
-                <ExperienceItem {...experience}/>
+                <ExperienceItem {...experience} />
             </li>
-        })
+        ))
     }
 </ol>
-
